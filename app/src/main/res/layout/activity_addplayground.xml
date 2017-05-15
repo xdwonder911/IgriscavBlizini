@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_addplayground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xdwonder.igriscavblizini.activity_addplayground">
+
+
+    <Button
+        android:text="Next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAddPlay"
+        android:layout_width="328dp"
+        android:layout_height="447dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RatingBar
+            android:id="@+id/ratingBarAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            tools:layout_editor_absoluteX="-94dp"
+            tools:layout_editor_absoluteY="-84dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select tags"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Coordinates x: 999 y: 999"
+            android:textSize="18sp"
+            app:layout_constraintRight_toRightOf="@+id/LinearLayoutAddPlay"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

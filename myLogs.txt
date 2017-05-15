@@ -1,0 +1,61 @@
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to C:\Users\xdwonder\AppData\Local\Android\Sdk\ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2520Library
+:app:prepareComAndroidSupportAppcompatV72520Library
+:app:prepareComAndroidSupportConstraintConstraintLayout101Library
+:app:prepareComAndroidSupportDesign2520Library
+:app:prepareComAndroidSupportRecyclerviewV72520Library
+:app:prepareComAndroidSupportSupportCompat2520Library
+:app:prepareComAndroidSupportSupportCoreUi2520Library
+:app:prepareComAndroidSupportSupportCoreUtils2520Library
+:app:prepareComAndroidSupportSupportFragment2520Library
+:app:prepareComAndroidSupportSupportMediaCompat2520Library
+:app:prepareComAndroidSupportSupportV42520Library
+:app:prepareComAndroidSupportSupportVectorDrawable2520Library
+:app:prepareComAndroidSupportTransition2520Library
+:app:prepareComFrosquivelMagicalcamera503Library
+:app:prepareComGoogleAndroidGmsPlayServicesBase1020Library
+:app:prepareComGoogleAndroidGmsPlayServicesBasement1020Library
+:app:prepareComGoogleAndroidGmsPlayServicesLocation1020Library
+:app:prepareComGoogleAndroidGmsPlayServicesTasks1020Library
+:app:prepareComGoogleAndroidGmsPlayServicesVision1020Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifestC:\Users\xdwonder\Dropbox\sola\letnik_2\semester2\programski_jeziki\IgriscavBlizini\app\src\main\AndroidManifest.xml:50:13-67 Error:
+	Attribute provider#android.support.v4.content.FileProvider@authorities value=(com.example.android.fileprovider) from AndroidManifest.xml:50:13-67
+	is also present at [com.frosquivel:magicalcamera:5.0.3] AndroidManifest.xml:20:13-60 value=(com.example.xdwonder.igriscavblizini.provider).
+	Suggestion: add 'tools:replace="android:authorities"' to <provider> element at AndroidManifest.xml:48:9-56:20 to override.
+C:\Users\xdwonder\Dropbox\sola\letnik_2\semester2\programski_jeziki\IgriscavBlizini\app\src\main\AndroidManifest.xml:55:17-51 Error:
+	Attribute meta-data#android.support.FILE_PROVIDER_PATHS@resource value=(@xml/file_paths) from AndroidManifest.xml:55:17-51
+	is also present at [com.frosquivel:magicalcamera:5.0.3] AndroidManifest.xml:25:17-55 value=(@xml/provider_paths).
+	Suggestion: add 'tools:replace="android:resource"' to <meta-data> element at AndroidManifest.xml:53:13-55:54 to override.
+
+
+See http://g.co/androidstudio/manifest-merger for more information about the manifest merger.
+
+:app:processDebugManifest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugManifest'.
+> Manifest merger failed with multiple errors, see logs
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 24.635 secs
